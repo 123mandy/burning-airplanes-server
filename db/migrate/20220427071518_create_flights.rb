@@ -5,8 +5,8 @@ class CreateFlights < ActiveRecord::Migration[5.2]
       t.string :origin
       t.string :destination
       t.date :date
-      t.integer :airplane_id
-      t.integer :reservation_id
+      t.integer :airplane_id, :optional => true;
+      t.integer :reservation_id :optional => true;
 
       t.timestamps
     end
