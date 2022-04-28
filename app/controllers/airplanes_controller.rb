@@ -4,6 +4,7 @@ class AirplanesController < ApplicationController
   # GET /airplanes or /airplanes.json
   def index
     @airplanes = Airplane.all
+    @airplanes = Airplane.order('id DESC')
   end
 
   # GET /airplanes/1 or /airplanes/1.json
